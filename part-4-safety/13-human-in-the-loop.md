@@ -46,7 +46,7 @@ HITL systems need a granularity model — what level of action requires approval
 
 **Per-command approval**: Every tool call requires explicit human approval. Appropriate for the highest-risk environments (production databases, financial systems). Extremely slow. Causes approval fatigue in all but the most critical contexts.
 
-**Per-phase approval**: The human approves at phase boundaries (plan → execute). The agent operates freely within each phase. This is the default for most production work — it balances safety with throughput.
+**Per-phase approval**: The human approves at phase boundaries (plan -> execute). The agent operates freely within each phase. This is the default for most production work — it balances safety with throughput.
 
 **Per-session approval**: The human sets goals and constraints at session start, then the agent operates autonomously within those bounds. Appropriate for well-understood, repeatable workflows with strong permission guardrails (Ch 12).
 

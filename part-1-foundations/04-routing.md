@@ -19,9 +19,9 @@ Production routing has four dimensions: model routing (which model), surface rou
 ```
 Incoming request
     │
-    ├── Simple task → fast, cheap model
-    ├── Standard task → default model
-    └── Complex task → most capable model
+    ├── Simple task -> fast, cheap model
+    ├── Standard task -> default model
+    └── Complex task -> most capable model
 ```
 
 Model routing can be static (configured per agent role), dynamic (a classifier estimates complexity), or user-directed (a command escalates to a higher-capability model).

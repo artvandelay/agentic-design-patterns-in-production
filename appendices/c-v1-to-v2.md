@@ -11,7 +11,7 @@ V1 refers to two things: the *Agentic Design Patterns* textbook by Alessandro Gu
 | **Session Lifecycle** (Ch 9) | V1 assumes stateless turns. Production sessions have boot sequences, latches, stop hooks, resumability, and compaction. |
 | **Context Economics** (Ch 11) | V1 doesn't address cost. Production systems are dominated by cache stability, prefix sharing, and diminishing-returns detection. |
 | **Permission Pipelines** (Ch 12) | V1 has no security model. Production permissions are an eight-layer pipeline shaped by real vulnerability reports. |
-| **Sandboxing and Isolation** (Ch 15) | V1 doesn't cover execution isolation. Production sandboxing addresses LLM-specific threats: prompt injection → heap scraping, token exfiltration. |
+| **Sandboxing and Isolation** (Ch 15) | V1 doesn't cover execution isolation. Production sandboxing addresses LLM-specific threats: prompt injection -> heap scraping, token exfiltration. |
 | **Operating an Agent Runtime** (Ch 19) | V1 has no synthesizing chapter. This chapter argues that agent operation is environment engineering, not prompt engineering. |
 
 ## Substantially Upgraded from V1

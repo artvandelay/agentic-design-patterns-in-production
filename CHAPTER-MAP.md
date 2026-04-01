@@ -40,7 +40,7 @@ Key production observations grounding this chapter:
   tool-pool as a scoped capability surface — configured per agent role — is not a chatbot
   concept. It is a runtime concept.
 
-What this tells us beyond v1: v1 defines the agent loop abstractly (perceive → reason →
+What this tells us beyond v1: v1 defines the agent loop abstractly (perceive -> reason ->
 act). This chapter shows what the loop looks like when implemented: the query engine as
 the heartbeat, the tool execution loop as the act phase, and the reasons why reads and
 writes must be handled differently at the loop level.
@@ -461,7 +461,7 @@ Key production observations grounding this chapter:
 - **§19**: "The session token is read from `/run/ccr/session_token`, then
   `prctl(PR_SET_DUMPABLE, 0)` is called via Bun FFI to block same-UID ptrace. The
   explicit threat model is a prompt-injected `gdb -p $PPID` scraping the token from the
-  heap." The sandbox's specific threat model (prompt injection → debugger → heap scrape)
+  heap." The sandbox's specific threat model (prompt injection -> debugger -> heap scrape)
   is not a generic security concern. It is a concern specific to LLM agents operating
   with ambient authority.
 - **§19**: "After the relay starts, the token file is unlinked. The token exists only in
@@ -474,7 +474,7 @@ Key production observations grounding this chapter:
   (load balancer limitations, proxy behavior) that shape the implementation.
 
 What this tells us beyond v1: v1 doesn't cover sandboxing. This chapter is new: the
-LLM-specific threat model (prompt injection → ambient authority abuse), heap-only token
+LLM-specific threat model (prompt injection -> ambient authority abuse), heap-only token
 patterns, fail-open security design, and infrastructure constraints on sandbox
 implementation.
 
@@ -629,12 +629,12 @@ After applying merges and cuts:
 | 9 | Session Lifecycle | STRONG | §9, §23, §8 |
 | 10 | Memory Management | STRONG | §13, §31, §7 |
 | 11 | Context Economics | STRONG | §9, §11, §22, §24 |
-| ~~12~~ | ~~Knowledge Retrieval~~ | **MERGED → Ch 18** | — |
+| ~~12~~ | ~~Knowledge Retrieval~~ | **MERGED -> Ch 18** | — |
 | 12 | Permission Pipelines | STRONG | §21 ×3 |
 | 13 | Human-in-the-Loop | EARNS IT | §6, §4, §2 |
 | 14 | Guardrails and Safety | EARNS IT | §27, §30, §14 |
 | 15 | Sandboxing and Isolation | EARNS IT | §19 ×3 |
-| ~~18~~ | ~~Inter-Agent Communication~~ | **MERGED → Ch 16** | — |
+| ~~18~~ | ~~Inter-Agent Communication~~ | **MERGED -> Ch 16** | — |
 | 16 | Multi-Agent Coordination | STRONG | §10, §22, §28 |
 | 17 | Observability and Evaluation | STRONG | §23, §25, §4 |
 | 18 | Extension and Integration | EARNS IT | §18, §5, RAG |

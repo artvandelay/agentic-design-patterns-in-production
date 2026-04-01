@@ -1,6 +1,6 @@
 # Appendix A: Glossary
 
-**Agent loop** — The cycle of input → reason → act → observe that defines agentic behavior. The fundamental unit of agent execution. (Ch 1)
+**Agent loop** — The cycle of input -> reason -> act -> observe that defines agentic behavior. The fundamental unit of agent execution. (Ch 1)
 
 **Bounded coordination** — The constraint that agents cannot make commitments that outlive their session. Agent IDs do not survive restart. (Ch 16)
 

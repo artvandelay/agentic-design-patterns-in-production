@@ -10,7 +10,7 @@ An agent runtime operates with ambient authority. It holds API tokens, has file-
 
 This creates a threat model unique to LLM agents:
 
-- **Prompt injection → command execution.** A malicious instruction embedded in a document, web page, or API response can cause the model to execute commands the user never intended. The model is not "hacked" — it is following instructions that it cannot distinguish from legitimate ones.
+- **Prompt injection -> command execution.** A malicious instruction embedded in a document, web page, or API response can cause the model to execute commands the user never intended. The model is not "hacked" — it is following instructions that it cannot distinguish from legitimate ones.
 - **Token exfiltration.** If the agent holds an API token in memory and the attacker can cause the agent to execute arbitrary code, the token can be read from the process heap. Traditional applications protect tokens with access controls; agent systems must protect tokens from the agent's own execution environment.
 - **Credential interception.** If the agent's network traffic passes through a proxy (common in corporate environments), the proxy can intercept TLS connections and read API tokens from request headers. The agent must route sensitive traffic to bypass the proxy.
 

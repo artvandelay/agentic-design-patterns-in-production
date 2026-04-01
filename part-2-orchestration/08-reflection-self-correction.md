@@ -24,9 +24,9 @@ Generate output
     ▼
 Evaluate against criterion
     │
-    ├── Passes → accept, move on
+    ├── Passes -> accept, move on
     │
-    └── Fails → diagnose, revise, re-evaluate
+    └── Fails -> diagnose, revise, re-evaluate
                     │
                     └── (bounded: max iterations or diminishing-returns check)
 ```

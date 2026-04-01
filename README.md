@@ -1,5 +1,7 @@
 # Agentic Design Patterns in Production
 
+[Download the complete book as a PDF](Agentic-Design-Patterns-in-Production.pdf)
+
 What happens when you read the source code of a production agent runtime and extract the patterns the textbook didn't cover.
 
 ## Origins

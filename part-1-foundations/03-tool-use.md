@@ -21,19 +21,19 @@ The production concerns are not about function-calling mechanics — those are w
 ```
 Model produces response
     │
-    ├── Text only → turn complete
+    ├── Text only -> turn complete
     │
     └── Contains tool call(s)
             │
             ├── Check permissions (Ch 12)
-            │       ├── Denied → return error as tool result
-            │       └── Allowed → execute
+            │       ├── Denied -> return error as tool result
+            │       └── Allowed -> execute
             │
             ├── Execute tool(s)
-            │       ├── Success → return result
-            │       └── Failure → classify error, return result
+            │       ├── Success -> return result
+            │       └── Failure -> classify error, return result
             │
-            └── Feed results back as messages → next iteration
+            └── Feed results back as messages -> next iteration
 ```
 
 ### Tool Definitions as Cache Surface
